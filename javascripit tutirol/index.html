@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripit tutorial</title>
+</head>
+<body>
+    <h1>welcome to javascripit tutiroal </h1>
+    <div id=""class="container">
+       <button id="click">click me</button>
+    </div>
+    <div class="container">
+        <p>this is a paragraph</p>
+    </div>
+    <script>
+        //1.ways to print in javascripit 
+        //console.log("helloworld");
+        //alert("me");
+        //document.write("this is a document write");
+        
+        //2.javascripit console api
+       /* console.log("helloworld",4+6,"adarsh");
+        console.warn("this is warning")
+        console.error("this is an error");
+
+        // console.log("helloworld");
+        //alert("me");
+        var a=10;
+        console.log(a);*/
+
+        //3.operator in js
+        //3.1 arthmatic operator in js
+        var a=90;
+        var b=10;
+
+        console.log("the a+b is",a+b);
+        console.log("a-b is",a-b);
+        console.log("the a*b is",a*b);
+        console.log("the a/b is ",a/b);
+
+        //3.2 assignment operator
+        var c=b;
+         c+=2;
+         c*=2;
+        console .log(c);
+
+        //3.3 comparison operator in js
+        var x=34;
+        var y=56;
+        console.log(x==y);
+        console.log(x>=y);
+        console.log(x<=y);
+        console.log(x>y);
+        console.log(x<y);
+
+        //3.4 logical opertors
+        //logical and&&
+        console.log(true && false);
+        console.log(true && true);
+        console.log(false && false);
+        console.log(false && true);
+       //logical or ||
+        console.log(true || false);
+        console.log(true || true);
+        console.log(false || false);
+        console.log(false || true);
+
+        //logical not
+        console.log(!false);
+        console.log(!true);
+
+      //function in javascripit
+        function avg(a,b){
+            c=(a+b)/2;
+            return c;
+
+        }
+        c1=avg(10,8);
+        c2=avg(4,6);
+
+        console.log(c1,c2);
+
+//conditional statement in javascripit
+var age=23;
+
+if(age>18){
+    console.log("you are not a kid")
+}
+else if(age<18){
+    console.log("you are a kid");
+}
+else if(age>52){
+    console.log("bacche haii");
+}
+
+//loops in js
+//for loop in js
+let arr=[1,2,3,4,5,6,8,7];
+for(let i=0;i<arr.length;i++){
+    
+    console.log(arr[i]);
+}
+//for each loop in js
+
+arr.forEach(function(element){
+    console.log(element);
+})
+
+//while loop in js
+
+let j=0;
+
+while(j<arr.length){
+    console.log(arr[j]);
+    j++;
+}
+//array in js
+let n=[1,2,3,4,5,6];
+ console.log (n.join("_"));
+n.pop();
+n.push(99);
+n.shift()
+n.unshift(11);
+// n.delete[1];
+for(let i=0;i<n.length;i++){
+    console.log(n[i]);
+
+}
+let r=[1,0,7,6,8,9,3,5];
+
+r.sort();
+console.log(r);
+
+//splice method
+
+const num=[1,2,3,4,5];
+// num.splice(2,1,23,24);/
+// num.slice(2);
+let s=num.reverse();
+console.log(s);
+//4.string in javascripit
+//method in string
+let name="adarsh";
+// let d=name.length;
+let w=name.toUpperCase();
+console.log(w);
+
+let h="ramayan";
+let v=h.slice(0,4);
+console.log(v);
+
+let f="adarsh bhai";
+let newName=f.replace("bhai","bhanu");
+console.log(newName);
+
+let s1="adarsh";
+let s2="mishra";
+let s3="developer";
+console.log(s1 +" "+s2+" "+s3);
+
+let as="   adarsh  ";
+let we=as.trim();
+console.log(we);
+
+let re="nikki";
+console.log(re[0]);
+
+//date in js
+
+/*const myDate=new Date();
+console.log(myDate);
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getHours());*/
+
+/*var a=prompt("enter1");
+var b=prompt("enter2");
+
+console.log(a-b);*/
+
+// let l=document.getElementsByTagName('button');
+//  console.log(l.html);
+
+ let ln=document.getElementsByTagName('div');
+  console.log(ln);
+  createdElement=document.createElement('p');
+createdElement.innerText="this is a created para";
+ ln[0].appendChild(createdElement);
+ createdElement2=document.createElement('b');
+createdElement2.innerText="this is a created para";
+ln[0].replaceChild(createdElement2,createdElement)
+
+    
+    </script>
+
+    
+</body>
+
+</html>
